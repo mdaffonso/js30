@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Druminator 9000</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <h1>Druminator 9000</h1>
+  <main>
+    <div class="cluster left">
+      <div class="drum-piece">
+        <button data-key="keyw">
+          <kbd>W</kbd>
+          <p>Hi-hat (closed)</p>
+        </button>
+      </div>
+      <div class="drum-piece">
+        <button data-key="keya">
+          <kbd>A</kbd>
+          <p>Tom</p>
+        </button>
+      </div>
+      <div class="drum-piece">
+        <button data-key="keys">
+          <kbd>S</kbd>
+          <p>Clap</p>
+        </button>
+      </div>
+      <div class="drum-piece">
+        <button data-key="keyd">
+          <kbd>D</kbd>
+          <p>Snare</p>
+        </button>
+      </div>
+    </div>
+    
+    <div class="cluster right">
+      <div class="drum-piece">
+        <button data-key="keyi">
+          <kbd>I</kbd>
+          <p>Hi-hat (open)</p>
+        </button>
+      </div>
+      <div class="drum-piece">
+        <button data-key="keyj">
+          <kbd>J</kbd>
+          <p>Ride</p>
+        </button>
+      </div>
+      <div class="drum-piece">
+        <button data-key="keyk">
+          <kbd>K</kbd>
+          <p>Boom</p>
+        </button>
+      </div>
+      <div class="drum-piece">
+        <button data-key="keyl">
+          <kbd>L</kbd>
+          <p>Tink</p>
+        </button>
+      </div>
+    </div>
+
+    <div class="middle">
+      <div class="drum-piece">
+        <button data-key="space">
+          <kbd>Space</kbd>
+          <p>Kick</p>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <audio src="audio/boom.wav" data-key="keyk"></audio>
+  <audio src="audio/kick.wav" data-key="space"></audio>
+  <audio src="audio/snare.wav" data-key="keyd"></audio>
+  <audio src="audio/hihat.wav" data-key="keyw"></audio>
+  <audio src="audio/openhat.wav" data-key="keyi"></audio>
+  <audio src="audio/clap.wav" data-key="keys"></audio>
+  <audio src="audio/ride.wav" data-key="keyj"></audio>
+  <audio src="audio/tink.wav" data-key="keyl"></audio>
+  <audio src="audio/tom.wav" data-key="keya"></audio>
+</body>
+</html>
