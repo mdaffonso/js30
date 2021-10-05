@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variabiliy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>CSS Variables Controlled by JS</h1>
+
+    <div class="input-group">
+      <label for="padding">Padding</label>
+      <input type="range" id="padding" value="0" min="0" max="20" data-var="--p" data-prev="0" data-suffix="px" />
+    </div>
+    <div class="input-group">
+      <label for="margin">Margin</label>
+      <input type="range" id="margin" value="0" min="0" max="20" data-var="--m" data-prev="0" data-suffix="px" />
+    </div>
+    <div class="input-group">
+      <label for="blur">Blur</label>
+      <input type="range" id="blur" value="0" min="0" max="20" data-var="--b" data-prev="0" data-suffix="px" />
+    </div>
+    <div class="input-group">
+      <label for="color">Color</label>
+      <input type="color" id="color" value="#FFFFFF" data-var="--c" data-prev="#FFFFFF" />
+    </div>
+  </header>
+
+  <main>
+    <div class="variable">
+      <img src="https://images.unsplash.com/photo-1633420621794-e7625fe4f676?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80" alt="abstract art">
+    </div>
+    <div class="variable">
+      <img src="https://images.unsplash.com/photo-1633387693653-adcc9244725a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=871&q=80" alt="abstract art">
+    </div>
+    <div class="variable">
+      <img src="https://images.unsplash.com/photo-1633387741882-5357c5688568?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="abstract art">
+    </div>
+    <div class="variable">
+      <img src="https://images.unsplash.com/photo-1633420619728-4d0c76103882?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1127&q=80" alt="abstract art">
+    </div>
+  </main>
+</body>
+</html>
