@@ -1,12 +1,25 @@
+import BG from "./backgrounds.js"
+
 const $ = selector => document.querySelector(selector)
+
+const setBg = () => {
+  const day = getTime().d
+  const index = day % (BG.length-1)
+
+  const data = BG[index]
+  $("body").style.setProperty("background-image", `url("${data.url}")`)
+  $("#artist").href = data.profile
+  $("#artist").innerText = data.artist
+}
 
 const getTime = () => {
   const now = new Date()
+  const d = now.getDate()
   const h = now.getHours()
   const m = now.getMinutes()
   const s = now.getSeconds()
 
-  return {h, m, s}
+  return {d, h, m, s}
 }
 
 const rotateHand = (what, rotation) => {
@@ -51,3 +64,4 @@ const setTime = () => {
 }
 
 setInterval(setTime, 1000)
+setBg()

@@ -6,19 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clock</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+  <script src="js/main.js" type="module" defer></script>
   <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 </head>
 <body>
+  <header>
+    <p>Artist</p>
+    <a href="#" id="artist" target="_blank"></a>
+  </header>
   <main>
     <div class="hand" id="second"></div>
     <div class="hand" id="minute"></div>
     <div class="hand" id="hour"></div>
   </main>
   <footer>
-    <p class="display" id="d-hour"></p>
-    <p class="display" id="d-minute"></p>
-    <p class="display" id="d-second"></p>
+    <p class="display" id="d-hour">00</p>
+    <p class="display" id="d-minute">00</p>
+    <p class="display" id="d-second">00</p>
   </footer>
 </body>
 </html>
